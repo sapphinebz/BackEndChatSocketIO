@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AppService } from './app.service';
-import { EventsModule } from './events/events.module';
-import { PokemonModule } from './pokemon/pokemon.module';
+import { MessageModule } from './message/message.module';
 
 @Module({
-  imports: [EventsModule, PokemonModule],
+  imports: [MessageModule],
   controllers: [],
   providers: [AppService],
 })
